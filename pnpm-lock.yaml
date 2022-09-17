@@ -1,0 +1,25 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@nocom_bot/types_ts_plugin_a1': ^0.14.0
+  '@tsconfig/node18': ^1.0.1
+  '@types/node': ^18.7.9
+
+dependencies:
+  '@nocom_bot/types_ts_plugin_a1': 0.14.0
+  '@tsconfig/node18': 1.0.1
+  '@types/node': 18.7.9
+
+packages:
+
+  /@nocom_bot/types_ts_plugin_a1/0.14.0:
+    resolution: {integrity: sha512-+isEMsF+s+M0UYoP5ptdCRkjBmdkLZSkcj4wVEI0EcjhCQjOv/WjM+9CUEruBBSXyuG+eGu9AESR7PUvY9Elkw==}
+    dev: false
+
+  /@tsconfig/node18/1.0.1:
+    resolution: {integrity: sha512-sNFeK6X2ATlhlvzyH4kKYQlfHXE2f2/wxtB9ClvYXevWpmwkUT7VaSrjIN9E76Qebz8qP5JOJJ9jD3QoD/Z9TA==}
+    dev: false
+
+  /@types/node/18.7.9:
+    resolution: {integrity: sha512-0N5Y1XAdcl865nDdjbO0m3T6FdmQ4ijE89/urOHLREyTXbpMWbSafx9y7XIsgWGtwUP2iYTinLyyW3FatAxBLQ==}
+    dev: false
