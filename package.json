@@ -1,13 +1,13 @@
 {
-    "name": "@nocom_bot/nocom-atype-template-a1v1",
-    "version": "0.1.0",
+    "name": "@c3cbot/internal_plugin",
+    "version": "1.0.0-alpha.1",
     "description": "",
     "main": "void.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
+    "author": "BadAimWeeb",
     "license": "MIT",
     "dependencies": {
         "@nocom_bot/types_ts_plugin_a1": "^0.14.0",
@@ -18,10 +18,10 @@
         "formatVersion": 1,
         "subclass": 1,
         "entryPoint": "entry.ts",
-        "author": "BadAimWeeb (Replace this with your name if this is your plugin)",
-        "pluginName": "A0 Template (Replace this with your plugin name)",
-        "pluginNamespace": "a0template_replaceme",
-        "pluginVersion": "0.1.0"
+        "author": "BadAimWeeb",
+        "pluginName": "C3CBot Internal Plugin",
+        "pluginNamespace": "c3cbot",
+        "pluginVersion": "1.0.0-alpha.1"
     },
     "type": "module"
 }
