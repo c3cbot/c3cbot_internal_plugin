@@ -1,6 +1,6 @@
 {
     "name": "@c3cbot/internal_plugin",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "",
     "main": "void.js",
     "scripts": {
@@ -10,9 +10,9 @@
     "author": "BadAimWeeb",
     "license": "MIT",
     "dependencies": {
-        "@nocom_bot/types_ts_plugin_a1": "^0.14.0",
+        "@nocom_bot/types_ts_plugin_a1": "^0.14.2",
         "@tsconfig/node18": "^1.0.1",
-        "@types/node": "^18.7.9"
+        "@types/node": "^18.7.20"
     },
     "NOCOM_AType_Metadata": {
         "formatVersion": 1,
@@ -21,7 +21,7 @@
         "author": "BadAimWeeb",
         "pluginName": "C3CBot Internal Plugin",
         "pluginNamespace": "c3cbot",
-        "pluginVersion": "1.0.0-alpha.1"
+        "pluginVersion": "1.0.0-alpha.2"
     },
     "type": "module"
 }
