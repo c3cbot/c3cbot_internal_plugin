@@ -166,7 +166,7 @@ await NOCOM_AType.registerCommand("version", {
   }
 }, async data => {
   return {
-    content: `C3CBot v1.0.0-alpha.1`,
+    content: `C3CBot v1.0.0-beta.1`,
     attachments: []
   };
 }, []);
