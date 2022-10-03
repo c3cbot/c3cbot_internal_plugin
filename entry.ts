@@ -77,10 +77,10 @@ await NOCOM_AType.registerCommand("restart", {
 
 await NOCOM_AType.registerCommand("lang", {
   args: {
-    fallback: "<IETF language tag>",
-    "en-US": "<IETF language tag>",
-    "vi": "<Mã ngôn ngữ IETF>",
-    "ja": "<IETF言語タグ>"
+    fallback: "[IETF language tag]",
+    "en-US": "[IETF language tag]",
+    "vi": "[Mã ngôn ngữ IETF]",
+    "ja": "[IETF言語タグ]"
   },
   argsName: ["language"],
   description: {
@@ -166,7 +166,7 @@ await NOCOM_AType.registerCommand("version", {
   }
 }, async data => {
   return {
-    content: `C3CBot v1.0.0-beta.1`,
+    content: `C3CBot v1.0.0-beta.2`,
     attachments: []
   };
 }, []);

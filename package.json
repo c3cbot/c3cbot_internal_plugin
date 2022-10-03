@@ -1,6 +1,6 @@
 {
     "name": "@c3cbot/internal_plugin",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "description": "",
     "main": "void.js",
     "scripts": {
@@ -21,7 +21,7 @@
         "author": "BadAimWeeb",
         "pluginName": "C3CBot Internal Plugin",
         "pluginNamespace": "c3cbot",
-        "pluginVersion": "1.0.0-alpha.2"
+        "pluginVersion": "1.0.0-beta.2"
     },
     "type": "module"
 }
