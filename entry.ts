@@ -166,7 +166,7 @@ await NOCOM_AType.registerCommand("version", {
   }
 }, async data => {
   return {
-    content: `C3CBot v1.0.0-beta.2`,
+    content: `C3CBot v1.0.0-beta.7`,
     attachments: []
   };
 }, []);
@@ -302,6 +302,36 @@ await NOCOM_AType.registerCommand("plugins", {
     running: boolean
   }[];
 
+  let installedPlugins = (await NOCOM_AType.callAPI("core", "get_registered_plugins", {})) as {
+    namespace: string,
+    pluginName: string,
+    version: string,
+    author: string,
+    resolver: string
+  }[];
+
+  let iPluginMap: {
+    [resolver: string]: {
+      namespace: string,
+      pluginName: string,
+      version: string,
+      author: string
+    }[]
+  } = {};
+
+  installedPlugins.forEach(plugin => {
+    if (!iPluginMap[plugin.resolver]) {
+      iPluginMap[plugin.resolver] = [];
+    }
+
+    iPluginMap[plugin.resolver].push({
+      namespace: plugin.namespace,
+      pluginName: plugin.pluginName,
+      version: plugin.version,
+      author: plugin.author
+    });
+  });
+
   let moduleList = installedModules.map(module => {
     return {
       moduleID: module.moduleID,
@@ -313,11 +343,17 @@ await NOCOM_AType.registerCommand("plugins", {
   });
 
   return {
-    content: "Installed modules:\n\n" +
+    content: "Installed modules:\n" +
       moduleList.map(module => {
         return `- ${module.running ? "✅" : "❌"} ${module.displayname} (${module.namespace} at ID ${module.moduleID})`
       }).join("\n") +
-      "\n\nInstalled plugins: (spec not defined yet)",
+      "\n\nRegistered plugins:\n\n" +
+        Object.keys(iPluginMap).map(resolver => {
+          return `*${moduleList.find(m => m.moduleID === resolver)?.displayname}*:\n` +
+            iPluginMap[resolver].map(plugin => {
+              return `- ${plugin.pluginName} v${plugin.version} by ${plugin.author} (${plugin.namespace})`;
+            }).join("\n");
+        }).join("\n\n"),
     attachments: []
   };
 }, []);
